@@ -11,7 +11,8 @@
 }
 redir @http https://{host}{uri}
 
-tls /sourcegraph.pem /sourcegraph.key
+# tls /sourcegraph.pem /sourcegraph.key
+tls /ssl/sourcegraph.pem /ssl/sourcegraph.key
 
 # Add the reverse proxies IPs (or IP CIDR ranges) to the trusted_proxies list.
 # More information in https://caddyserver.com/docs/caddyfile/directives/reverse_proxy
